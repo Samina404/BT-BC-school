@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Notice Board - BT/BC Oddamavadi Central College. Stay updated with our latest announcements and updates.">
+    <title>Notice Board | BT/BC Oddamavadi Central College</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2 shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="School Logo" width="50">
+                <div class="brand-text ms-2">
+                    <span class="brand-name">BT/BC Oddamavadi Central College</span>
+                    <span class="brand-tagline">National School</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 active fw-semibold" href="notices.html">Notices</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="history.html">History</a></li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 fw-medium" href="achievements.html">Achievements</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 fw-medium" href="staff.html">Staff & Students</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-bold btn-apply-now text-primary-navy"
+                            href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header (Notice Hero) -->
+    <header class="section py-5 text-center text-white" style="background-color: #003366; min-height: 250px;">
+        <div class="container py-lg-4">
+            <h1 class="display-4 fw-bold mb-3">Notice Board</h1>
+            <p class="lead opacity-75 max-width-600 mx-auto">Stay informed with our latest announcements and updates</p>
+        </div>
+    </header>
+
+    <section class="section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="search-container mb-5">
+                        <div class="input-group">
+                        </div>
+                    </div>
+
+                    <div id="notices-list-container"></div>
+
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link shadow-none" href="#"
+                                    tabindex="-1">Previous</a></li>
+                            <li class="page-item active"><a
+                                    class="page-link shadow-none bg-primary-navy border-primary-navy" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link shadow-none text-primary-navy" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link shadow-none text-primary-navy" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link shadow-none text-primary-navy" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container py-lg-4">
+            <div class="row g-5">
+                <div class="col-lg-3">
+                    <div class="footer-logo mb-4 d-flex align-items-center">
+                        <img src="assets/images/logo.png" alt="School Logo" width="60"
+                            class="bg-white p-2 rounded-2 me-3">
+                        <div>
+                            <div class="footer-logo-text-top mb-0">BT/BC Oddamavadi Central College </div>
+                            <div class="footer-logo-text-bottom">National School</div>
+                        </div>
+                    </div>
+                    <p class="small opacity-75">National School committed to excellence in education and
+                        empowering students for a brighter future.</p>
+                </div>
+                <div class="col-6 col-lg-2 ms-lg-auto">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3"><a href="index.html">Home</a></li>
+                        <li class="mb-3"><a href="about.html">About Us</a></li>
+                        <li class="mb-3"><a href="notices.html">Notice Board</a></li>
+                        <li class="mb-3"><a href="index.html#achievements">Achievements</a></li>
+                        <li class="mb-3"><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="list-unstyled small opacity-90">
+                        <li class="d-flex mb-4">
+                            <i class="bi bi-geo-alt-fill me-3 text-warning fs-5"></i>
+                            <span>Colombo Road, Oddamavadi<br>Postal code 30420<br>Sri Lanka</span>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <i class="bi bi-telephone-fill me-3 text-warning fs-5"></i>
+                            <span>(+94) 0652257243</span>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <i class="bi bi-envelope-fill me-3 text-warning fs-5"></i>
+                            <span>info@occ.edu.lk</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Working Hours</h5>
+                    <ul class="list-unstyled small opacity-90 mb-4">
+                        <li class="mb-3">Monday - Thursday<br>7:30 AM - 2:00 PM</li>
+                        <li class="mb-4">Friday<br>7:30 AM - 11:00 AM</li>
+                    </ul>
+                    <h5 class="footer-title mb-3" style="font-size: 1.15rem;">Follow Us</h5>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" class="btn-social rounded-2" style="width: 34px; height: 34px;"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn-social rounded-2" style="width: 34px; height: 34px;"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn-social rounded-2" style="width: 34px; height: 34px;"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-top border-white border-opacity-10 text-center pt-5 mt-5">
+                <p class="footer-bottom-text mb-1">© 2026 BT/BC Oddamavadi Central College. All rights reserved.</p>
+                <p class="footer-bottom-text small">Designed and developed by <span class="text-warning">King Sparrow
+                        Group of Companies Pvt Ltd</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

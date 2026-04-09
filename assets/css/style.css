@@ -1,0 +1,1516 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #FACC15;
+    --accent-color: #0284C7;
+    --text-dark: #0F172A;
+    --text-muted: #64748B;
+    --bg-light: #F8FAFC;
+    --white: #FFFFFF;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+/* Navbar Improvements */
+.navbar {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    padding: 0.8rem 0;
+    transition: var(--transition);
+    border-bottom: 3px solid #facc15 !important;
+}
+
+.navbar.scrolled {
+    padding: 0.4rem 0;
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #facc15 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--primary-color) !important;
+}
+
+.navbar.scrolled .brand-name {
+    color: var(--primary-color) !important;
+}
+
+.navbar.scrolled .btn-apply-now {
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand img {
+    height: 55px;
+    margin-right: 15px;
+}
+
+.brand-text {
+    line-height: 1.1;
+}
+
+.brand-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+}
+
+.brand-tagline {
+    font-size: 0.85rem;
+    color: #CC8E35 !important;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 0 5px;
+    padding: 8px 18px !important;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background-color: rgba(0, 51, 102, 0.05);
+}
+
+.nav-link.active {
+    background-color: #004a9f;
+    /* Blue style matching image */
+    color: var(--white) !important;
+}
+
+.nav-link.active:hover {
+    color: var(--white);
+    background-color: #003d82;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('../images/school.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+/* Admission Form Modal Custom Styles */
+#admissionModal .modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+}
+
+#admissionModal .modal-header {
+    background-color: #004a9f;
+    color: white;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+#admissionModal .modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#admissionModal .form-progress {
+    background-color: #f1f5f9;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#admissionModal .progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#admissionModal .progress-text {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #004a9f;
+}
+
+#admissionModal .step-indicator {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+#admissionModal .progress {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+}
+
+#admissionModal .progress-bar {
+    background-color: #004a9f;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+
+#admissionModal .modal-body {
+    padding: 2rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#admissionModal .step-title {
+    color: #1e3a8a;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eef2f6;
+}
+
+#admissionModal .form-label {
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+#admissionModal .form-control {
+    border: 1.5px solid #e2e8f0;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+#admissionModal .form-control:focus {
+    border-color: #004a9f;
+    box-shadow: 0 0 0 4px rgba(0, 74, 159, 0.1);
+}
+
+#admissionModal .modal-footer {
+    padding: 1.5rem 2rem;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#admissionModal .btn-nav {
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+#admissionModal .btn-prev {
+    background-color: #e2e8f0;
+    color: #475569;
+    border: none;
+}
+
+#admissionModal .btn-prev:hover:not(:disabled) {
+    background-color: #cbd5e1;
+}
+
+#admissionModal .btn-next {
+    background-color: #004a9f;
+    color: white;
+    border: none;
+}
+
+#admissionModal .btn-next:hover {
+    background-color: #003d82;
+}
+
+/* Form Steps Visibility */
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Action button in nav styling */
+.btn-apply-now {
+    color: #003366 !important;
+    font-weight: 700 !important;
+    padding: 8px 18px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-apply-now:hover {
+    color: #002a54 !important;
+    background-color: rgba(0, 51, 102, 0.05) !important;
+    transform: translateY(-1px);
+}
+
+.btn-apply-now.active {
+    color: #ffffff !important;
+    background-color: #003366 !important;
+    border-radius: 8px !important;
+}
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--secondary-color);
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(250, 204, 21, 0.2);
+}
+
+.btn-gold:hover {
+    background-color: #EAB308;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(250, 204, 21, 0.3);
+}
+
+.btn-contact {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: var(--white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.bg-primary-navy {
+    background-color: var(--primary-color) !important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.lead-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-blue {
+    background: linear-gradient(to bottom, #005bb5, #004a95);
+    color: white !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 10px 20px rgba(0, 51, 102, 0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-blue:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 51, 102, 0.25);
+}
+
+.btn-cta-apply {
+    background-color: #FACC15;
+    color: #003366 !important;
+    font-weight: 700;
+    padding: 12px 35px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(250, 204, 21, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-cta-apply:hover {
+    transform: translateY(-3px);
+    background-color: #EAB308;
+    box-shadow: 0 12px 25px rgba(250, 204, 21, 0.3);
+}
+
+.btn-social {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background-color: #FACC15;
+    color: #003366 !important;
+    transform: translateY(-3px);
+}
+
+.program-card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #FACC15;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.program-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.program-title {
+    color: #003366;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.program-subtitle {
+    color: #FACC15;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.program-description {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* History Page Intro Section */
+.history-intro-title {
+    color: #003366;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.history-intro-card {
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.history-intro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.history-intro-card.bg-card-blue {
+    background: linear-gradient(145deg, #0056b3, #003366);
+}
+
+.history-intro-card.bg-card-gold {
+    background: linear-gradient(145deg, #facc15, #eab308);
+}
+
+.history-intro-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    display: block;
+    line-height: 1;
+}
+
+.history-intro-card h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.history-intro-card p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.text-blue-highlight {
+    color: #003366;
+    font-weight: 700;
+}
+
+.text-gold-highlight {
+    color: #eab308;
+    font-weight: 700;
+}
+
+.community-role-card {
+    background-color: #F8FAFC;
+    border-radius: 15px;
+    border-left: 6px solid #FACC15;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.community-role-card h3 {
+    color: #003366;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.community-role-card p {
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Timeline Styling */
+.timeline-container {
+    position: relative;
+    padding: 60px 0;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #FACC15;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    padding: 15px 50px;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: -11px;
+    background-color: white;
+    border: 5px solid #FACC15;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.2);
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right::after {
+    left: -11px;
+}
+
+.timeline-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-card .badge-year {
+    background-color: #003366;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.timeline-card .emoji-icon {
+    font-size: 2rem;
+}
+
+.timeline-card h4 {
+    color: #003366;
+    font-weight: 800;
+    font-size: 1.35rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-card p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-container::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 21px !important;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 0;
+}
+
+.section-bg-light {
+    background-color: #F8FAFC;
+}
+
+/* Achievements Page Styles */
+.achievement-hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.recognition-card {
+    border-radius: 15px;
+    padding: 2.5rem 1.5rem;
+    height: 100%;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.recognition-card:hover {
+    transform: translateY(-8px);
+}
+
+.recognition-card .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+.recognition-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.recognition-card p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.bg-grad-gold {
+    background: linear-gradient(145deg, #f1a40e, #d97706);
+}
+
+.bg-grad-blue {
+    background: linear-gradient(145deg, #3b82f6, #1d4ed8);
+}
+
+.bg-grad-green {
+    background: linear-gradient(145deg, #10b981, #047857);
+}
+
+.bg-grad-purple {
+    background: linear-gradient(145deg, #a855f7, #7e22ce);
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.stat-card .number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FACC15;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.stat-card .label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/* Reusing Timeline Card for Achievement Grid */
+.achievement-grid-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+    text-align: left;
+}
+
+.achievement-grid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-grid-card .badge-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-grid-card .icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    font-size: 2.5rem;
+    /* For emoji fallback */
+    line-height: 1;
+}
+
+.achievement-grid-card .year-badge {
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: white;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.achievement-card-sports {
+    border-left: 5px solid #FACC15 !important;
+}
+
+.badge-academic {
+    background-color: #003366 !important;
+}
+
+.badge-sports {
+    background-color: #cc8e35 !important;
+}
+
+.badge-cultural {
+    background-color: #a855f7 !important;
+}
+
+.achievement-grid-card h5 {
+    color: #003366;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.achievement-grid-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.notice-list-container {
+    background-color: #F8FAFC;
+    padding: 60px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Stats Cards */
+.stat-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 51, 102, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stat-icon img {
+    width: 30px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Notice Cards */
+.notice-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.notice-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.notice-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.badge-urgent {
+    background: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+}
+
+.badge-event {
+    background: #e0f2fe;
+    color: #0284c7;
+    border: 1px solid #bae6fd;
+}
+
+.badge-important {
+    background: #fef9c3;
+    color: #ca8a04;
+    border: 1px solid #fef08a;
+}
+
+.badge-news {
+    background: #ecfeff;
+    color: #0891b2;
+    border: 1px solid #cffafe;
+}
+
+.badge-features {
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #dcfce7;
+}
+
+.badge-academic {
+    background: #fff7ed;
+    color: #ea580c;
+    border: 1px solid #ffedd5;
+}
+
+/* Notice Board List View */
+.notice-list-item {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    border-left: 0;
+    position: relative;
+}
+
+.notice-list-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.notice-list-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.notice-list-content {
+    flex: 1;
+}
+
+.notice-list-item .notice-date {
+    float: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.notice-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Achievements Section */
+.achievement-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #FACC15;
+    height: 100%;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-year-badge {
+    background-color: #FACC15;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.achievement-title {
+    color: #003366;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.15rem;
+}
+
+.achievement-category {
+    color: #FACC15;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.achievement-desc {
+    color: #64748B;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.btn-achievement {
+    background: linear-gradient(to right, #004a9f, #0056b3);
+    color: white !important;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-achievement i {
+    font-size: 1.1rem;
+}
+
+.view-all-link {
+    color: #003366;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-all-link:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    /* Deep navy from screenshot */
+    color: #cbd5e1;
+    /* Light gray text */
+    padding: 80px 0 30px;
+}
+
+.footer-title {
+    color: #FACC15;
+    /* Gold titles */
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: #FACC15;
+}
+
+.footer-logo-text-top {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-logo-text-bottom {
+    color: #FACC15;
+    font-size: 1rem;
+}
+
+.footer-bottom-text {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* Search Bar */
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+#noticeSearch {
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: var(--shadow-sm);
+    font-size: 1rem;
+}
+
+#noticeSearch:focus {
+    box-shadow: var(--shadow-md);
+    outline: none;
+}
+
+/* Animations */
+[data-aos] {
+    transition-duration: 800ms;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .hero .d-flex {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    /* Achievement Modal Mobile */
+    #achievementModal .modal-header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #achievementModal .achievement-icon-wrapper {
+        margin: 0 0 20px 0 !important;
+        width: 60px;
+        height: 60px;
+    }
+
+    #achievementModal .modal-body {
+        padding: 25px 20px;
+    }
+
+    #achievementModal .students-box {
+        padding: 15px;
+    }
+    
+    #achievementModal .student-pill {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Admission Page Mobile */
+    .apply-header {
+        padding: 20px !important;
+        text-align: center !important;
+    }
+    
+    .apply-header .d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .apply-header .me-auto {
+        margin: 0 !important;
+    }
+
+    .form-step {
+        padding: 0 !important;
+    }
+
+    .step-indicator-bar {
+        padding: 15px !important;
+    }
+}
+
+/* Staff & Students Page Styles */
+.staff-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+}
+
+.staff-emoji {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.text-gold {
+    color: #CC8E35;
+}
+
+.student-life-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.student-icon-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.bg-primary-blue {
+    background-color: #004a9f;
+}
+
+.bg-purple {
+    background-color: #a855f7;
+}
+
+.featured-student-card {
+    background: #002d62;
+    padding: 2.25rem 2rem;
+    border-radius: 20px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.featured-student-card:hover {
+    transform: scale(1.05);
+}
+
+.fs-emoji {
+    font-size: 3rem;
+    display: block;
+}
+
+.tiny {
+    font-size: 0.75rem;
+}
+
+.stat-card-white {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icon-blue {
+    font-size: 2rem;
+    color: #003366;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.btn-gold {
+    background-color: #CC8E35;
+    color: white;
+    border: none;
+}
+
+.btn-gold:hover {
+    background-color: #b07a2d;
+    color: white;
+}
+
+.text-gold,
+.text-gold-highlight,
+.gold-text-highlight {
+    color: #CC8E35 !important;
+}
+
+/* Contact Page Styles */
+.btn-navy-action {
+    background-color: #003366;
+    color: white;
+}
+
+.btn-navy-action:hover {
+    background-color: #002a54;
+    color: white;
+}
+
+.info-icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.bg-blue-soft {
+    background-color: #1e3a8a;
+}
+
+.bg-orange-soft {
+    background-color: #b45309;
+}
+
+.bg-navy-soft {
+    background-color: #0f172a;
+}
+
+.bg-gold-soft {
+    background-color: #92400e;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-blue-navy {
+    color: #003366;
+}
+
+.map-placeholder-box {
+    background-color: #e2e8f0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legacy-card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Action button in nav active state */
+.btn-apply-now.active {
+    background-color: #004a9f !important;
+    color: white !important;
+}
+
+/* Achievement Modal Custom Styles */
+#achievementModal .modal-content {
+    border: none;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#achievementModal .modal-header {
+    border-bottom: none;
+    padding: 30px 40px;
+}
+
+#achievementModal .close-btn-custom {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+#achievementModal .close-btn-custom:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+#achievementModal .modal-header .badge {
+    background-color: white !important;
+    color: #004a9f !important;
+    font-weight: 700 !important;
+    padding: 6px 20px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#achievementModal .achievement-item-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #facc15;
+    color: #003366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+#achievementModal .students-box {
+    background-color: #f1f5f9;
+    border-left: 4px solid #facc15;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+#achievementModal .student-pill {
+    background: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #003366;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.text-navy {
+    color: #003366 !important;
+}
+
+/* Welcome Section & Cards */
+.welcome-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.welcome-stat-card {
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.welcome-stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-stat-icon-box {
+    width: 54px;
+    height: 54px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.bg-navy-box {
+    background-color: #003366;
+    color: white;
+}
+
+.bg-gold-box {
+    background-color: #facc15;
+    color: white;
+}
+
+.welcome-stat-number {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.welcome-stat-label {
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    .welcome-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}

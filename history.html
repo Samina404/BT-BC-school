@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Our History - BT/BC Oddamavadi Central College. A legacy of educational excellence since 1917.">
+    <title>Our History | BT/BC Oddamavadi Central College</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .timeline-container {
+            position: relative;
+            padding: 50px 0;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 10px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid var(--secondary-color);
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        .timeline-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .timeline-card:hover {
+            transform: scale(1.02);
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::after {
+                left: 21px;
+            }
+
+            .right {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2 shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="School Logo" width="50">
+                <div class="brand-text ms-2">
+                    <span class="brand-name">BT/BC Oddamavadi Central College</span>
+                    <span class="brand-tagline">National School</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="notices.html">Notices</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 active fw-semibold" href="history.html">History</a></li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 fw-medium" href="achievements.html">Achievements</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 fw-medium" href="staff.html">Staff & Students</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-bold btn-apply-now text-primary-navy"
+                            href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section py-5 text-center text-white" style="background-color: #003366; min-height: 250px;">
+        <div class="container py-lg-4">
+            <h1 class="display-4 fw-bold mb-3">Our History</h1>
+            <p class="lead opacity-75 max-width-600 mx-auto">109 years of excellence in education and community service
+                (1917 - 2026)</p>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="section py-5 bg-white">
+        <div class="container py-lg-5 text-center">
+            <div class="max-width-800 mx-auto">
+                <h2 class="history-intro-title">A Historic Landmark of Learning</h2>
+
+                <div class="mb-5">
+                    <p class="lead text-muted mb-4 px-lg-5">BT/BC Oddamavadi Central College stands as one of the oldest
+                        and most prestigious educational institutions in Oddamavadi and the Batticaloa District.
+                        Established around <span class="text-blue-highlight">1917</span>, the school is proudly
+                        celebrating <span class="text-gold-highlight">109 years of educational excellence</span> from
+                        1917 to 2026.</p>
+
+                    <p class="lead text-muted px-lg-4">Over more than a century, the school has evolved from a small
+                        local institution into a <span class="text-blue-highlight">National School</span> under the
+                        Ministry of Education, recognized for its outstanding academic standards, comprehensive
+                        facilities, and commitment to holistic student development.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center mt-5">
+                    <div class="col-md-4">
+                        <div class="history-intro-card bg-card-blue">
+                            <span class="icon">🎓</span>
+                            <h4>Academic Excellence</h4>
+                            <p>Provides education from Grade 6 to A/L with Science, Commerce, and Arts streams</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="history-intro-card bg-card-gold">
+                            <span class="icon">🏛️</span>
+                            <h4>Community Pillar</h4>
+                            <p>A cornerstone of social and educational development in Oddamavadi for over a century</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="history-intro-card bg-card-blue">
+                            <span class="icon">👨‍👩‍👧‍👦</span>
+                            <h4>Generational Legacy</h4>
+                            <p>Multiple generations from the same families have proudly studied within these walls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Role Section -->
+    <section class="section py-5">
+        <div class="container">
+            <div class="community-role-card">
+                <h3>Role in the Community</h3>
+                <p>BT/BC Oddamavadi Central College is not just an educational institution — it is a historic landmark
+                    and pillar of the Oddamavadi community. Alongside other important schools such as Oddamavadi Fathima
+                    Balika Maha Vidyalayam and Sharif Ali Vidyalaya, it forms the core educational network of the area.
+                </p>
+                <p>The school regularly engages in awareness campaigns, sports meets, cultural events, student
+                    development programs, and community service activities, demonstrating that its contribution extends
+                    far beyond classroom teaching.</p>
+                <p class="mb-0">Over its 109-year history, the school has witnessed the transformation of Oddamavadi
+                    from a rural village into a developed town, and has produced countless professionals, teachers,
+                    government officers, and community leaders who continue to serve society with distinction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="timeline-container">
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">🏫</span>
+                            <span class="badge-year">1917</span>
+                        </div>
+                        <h4>Foundation</h4>
+                        <p>BT/BC Oddamavadi Central College was established to serve the educational needs of the local
+                            community, marking the beginning of over a century of educational excellence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">📖</span>
+                            <span class="badge-year">1930s-40s</span>
+                        </div>
+                        <h4>Early Growth</h4>
+                        <p>The school expanded its facilities and curriculum, establishing itself as a key educational
+                            institution in Oddamavadi and the Batticaloa District.</p>
+                    </div>
+                </div>
+                <!-- Alternate Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">🔬</span>
+                            <span class="badge-year">1950s-60s</span>
+                        </div>
+                        <h4>Modern Development</h4>
+                        <p>Introduction of modern teaching methods and the first science laboratory, marking a
+                            significant milestone in providing quality science education.</p>
+                    </div>
+                </div>
+                <!-- Alternate Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">🏆</span>
+                            <span class="badge-year">1970</span>
+                        </div>
+                        <h4>National School Status</h4>
+                        <p>The school was elevated to National School status by the Ministry of Education in recognition
+                            of its outstanding contribution to education.</p>
+                    </div>
+                </div>
+                <!-- Alternate Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">🏗️</span>
+                            <span class="badge-year">1985</span>
+                        </div>
+                        <h4>New School Building</h4>
+                        <p>Construction of the modern school building was completed, providing state-of-the-art
+                            facilities for a growing student population.</p>
+                    </div>
+                </div>
+                <!-- Alternate Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">💻</span>
+                            <span class="badge-year">1992</span>
+                        </div>
+                        <h4>Computer Education</h4>
+                        <p>The school became one of the first in the region to introduce computer education, preparing
+                            students for the digital age.</p>
+                    </div>
+                </div>
+                <!-- Alternate Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">🚀</span>
+                            <span class="badge-year">2024</span>
+                        </div>
+                        <h4>STEM Excellence Center</h4>
+                        <p>Opening of the state-of-the-art STEM Excellence Center equipped with modern laboratories for
+                            advanced scientific education.</p>
+                    </div>
+                </div>
+                <!-- Alternate Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="emoji-icon">🎉</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h4>109 Years Anniversary</h4>
+                        <p>Celebrating 109 years of educational contribution (1917 to 2026), continuing the legacy as a
+                            pillar of regional development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container py-lg-4">
+            <div class="row g-5">
+                <div class="col-lg-3">
+                    <div class="footer-logo mb-4 d-flex align-items-center">
+                        <img src="assets/images/logo.png" alt="School Logo" width="60"
+                            class="bg-white p-2 rounded-2 me-3">
+                        <div>
+                            <div class="footer-logo-text-top mb-0">BT/BC Oddamavadi Central College </div>
+                            <div class="footer-logo-text-bottom">National School</div>
+                        </div>
+                    </div>
+                    <p class="small opacity-75">National School committed to excellence in education and
+                        empowering students for a brighter future.</p>
+                </div>
+                <div class="col-6 col-lg-2 ms-lg-auto">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3"><a href="index.html">Home</a></li>
+                        <li class="mb-3"><a href="about.html">About Us</a></li>
+                        <li class="mb-3"><a href="notices.html">Notice Board</a></li>
+                        <li class="mb-3"><a href="index.html#achievements">Achievements</a></li>
+                        <li class="mb-3"><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="list-unstyled small opacity-90">
+                        <li class="d-flex mb-4">
+                            <i class="bi bi-geo-alt-fill me-3 text-warning fs-5"></i>
+                            <span>Colombo Road, Oddamavadi<br>Postal code 30420<br>Sri Lanka</span>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <i class="bi bi-telephone-fill me-3 text-warning fs-5"></i>
+                            <span>(+94) 0652257243</span>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <i class="bi bi-envelope-fill me-3 text-warning fs-5"></i>
+                            <span>info@occ.edu.lk</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Working Hours</h5>
+                    <ul class="list-unstyled small opacity-90 mb-4">
+                        <li class="mb-3">Monday - Thursday<br>7:30 AM - 2:00 PM</li>
+                        <li class="mb-4">Friday<br>7:30 AM - 11:00 AM</li>
+                    </ul>
+                    <h5 class="footer-title mb-3" style="font-size: 1.15rem;">Follow Us</h5>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" class="btn-social rounded-2" style="width: 34px; height: 34px;"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn-social rounded-2" style="width: 34px; height: 34px;"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn-social rounded-2" style="width: 34px; height: 34px;"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-top border-white border-opacity-10 text-center pt-5 mt-5">
+                <p class="footer-bottom-text mb-1">© 2026 BT/BC Oddamavadi Central College. All rights reserved.</p>
+                <p class="footer-bottom-text small">Designed and developed by <span class="text-warning">King Sparrow
+                        Group of Companies Pvt Ltd</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

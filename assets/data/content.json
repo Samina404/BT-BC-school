@@ -1,0 +1,140 @@
+{
+  "notices": [
+    {
+      "id": 1,
+      "type": "Urgent",
+      "date": "March 25, 2026",
+      "time": "10:00 AM",
+      "title": "2026 Advanced Level Examination Schedule Released",
+      "content": "The final examination schedule for Advanced Level students (2026) has been officially published. All A/L students are required to check the notice board for their individual timetables. Exam preparation classes will continue every Saturday.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "type": "Event",
+      "date": "March 20, 2026",
+      "time": "2:30 PM",
+      "title": "Annual Sports Meet 2026 - Registration Open",
+      "content": "The Annual Inter-House Sports Meet will be held on April 15th, 2026, at the school ground. All students from grades 6-13 are encouraged to participate. Registration forms are available at the sports office.",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "type": "Important",
+      "date": "March 15, 2026",
+      "time": "8:00 AM",
+      "title": "Parent-Teacher Meeting - First Term 2026",
+      "content": "Monthly parent-teacher meeting for the first term will be held on April 5th, 2026, at 2:00 PM in the school auditorium. Parents are requested to attend and discuss their children's academic progress with respective class teachers.",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "type": "News",
+      "date": "March 12, 2026",
+      "time": "11:00 AM",
+      "title": "Science Exhibition 2026 - Call for Projects",
+      "content": "The annual school Science Exhibition will be held on May 20th. Students interested in showcasing their science projects should submit their proposals to the science department before March 30th.",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "type": "Features",
+      "date": "March 10, 2026",
+      "time": "9:30 AM",
+      "title": "School Library - New Books Arrival",
+      "content": "The school library has received a new collection of books covering various subjects including literature, science, history, and reference materials. Students are welcome to visit and borrow books during library hours.",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "type": "Academic",
+      "date": "March 05, 2026",
+      "time": "2:00 PM",
+      "title": "School Fee Payment Deadline Extended",
+      "content": "The deadline for second term school fee payment has been extended to April 10th, 2026. Parents can make payments at the school office or through online banking.",
+      "link": "#"
+    },
+    {
+      "id": 7,
+      "type": "News",
+      "date": "March 01, 2026",
+      "time": "3:00 PM",
+      "title": "Cultural Day Celebration - April 2026",
+      "content": "Join us in celebrating our rich cultural heritage on April 25th. Students are encouraged to participate in traditional dance, music, drama, and art competitions. Registration closes on April 10th.",
+      "link": "#"
+    },
+    {
+      "id": 8,
+      "type": "Event",
+      "date": "February 25, 2026",
+      "time": "10:30 AM",
+      "title": "Career Guidance Workshop for A/L Students",
+      "content": "A career guidance workshop will be conducted on April 12th for all Advanced Level students. University admission procedures, scholarship opportunities, and career pathways will be discussed.",
+      "link": "#"
+    }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "icon": "🎓",
+      "title": "Secondary Education",
+      "subtitle": "Grades 6-11",
+      "description": "Comprehensive curriculum preparing students for O/L examinations."
+    },
+    {
+      "id": 2,
+      "icon": "🏆",
+      "title": "Advanced Level",
+      "subtitle": "Grades 12-13",
+      "description": "Specialized streams in Science, Commerce, Arts, and Technology."
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "icon": "🥇",
+      "year": "2025",
+      "title": "District Champions",
+      "category": "Sports 2025",
+      "description": "Won district level athletics championship",
+      "overview": "Our school team has secured the district championship in athletics for the third consecutive year. Students participated in various track and field events including 100m sprint, 400m relay, long jump, high jump, and shot put. The team showed exceptional performance with 15 gold medals, 12 silver medals, and 8 bronze medals across all categories.",
+      "keyAchievements": [
+        "15 Gold Medals in various events",
+        "100m Sprint - District Record",
+        "400m Relay - 1st Place",
+        "Long Jump - Outstanding Performance",
+        "Team Spirit Award"
+      ],
+      "outstandingStudents": [
+        "Mohamed Rishan",
+        "Aathif Ahmed",
+        "Fathima Nasrin",
+        "Zainab Hussain"
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "📊",
+      "year": "2025",
+      "title": "95% Pass Rate",
+      "category": "A/L Exam 2025",
+      "description": "Outstanding performance in Advanced Level examinations"
+    },
+    {
+      "id": 3,
+      "icon": "🎖️",
+      "year": "2025",
+      "title": "Best School Award",
+      "category": "Provincial Level",
+      "description": "Recognized as the best performing school"
+    },
+    {
+      "id": 4,
+      "icon": "🎭",
+      "year": "2025",
+      "title": "Cultural Excellence",
+      "category": "National Competition",
+      "description": "Best performance in national cultural festival"
+    }
+  ]
+}
