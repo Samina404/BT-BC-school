@@ -1141,6 +1141,62 @@ footer {
     transition-duration: 800ms;
 }
 
+/* Application Form Footer Fixes */
+@media (max-width: 768px) {
+    .apply-footer {
+        padding: 1rem 1.25rem !important;
+        position: sticky;
+        bottom: 0;
+        background: white !important;
+        z-index: 1050;
+        box-shadow: 0 -8px 25px rgba(0, 51, 102, 0.08) !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        justify-content: space-between !important;
+        border-top: 1px solid #eef2f6 !important;
+    }
+    
+    .apply-footer .btn {
+        flex: 1 !important;
+        padding: 12px 10px !important;
+        font-size: 0.85rem !important;
+        min-width: 100px !important;
+        border-radius: 10px !important;
+        font-weight: 700 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #bottomStepCounter {
+        width: 100%;
+        text-align: center;
+        order: -1;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: var(--primary-color) !important;
+    }
+
+    #prevStepBtn {
+        background-color: #f1f5f9 !important;
+        color: #64748b !important;
+    }
+
+    #nextStepBtn:not(.btn-success) {
+        background-color: #004a9f !important;
+        color: white !important;
+    }
+
+    #nextStepBtn.btn-success {
+        background-color: #16a34a !important;
+        border-color: #16a34a !important;
+        color: white !important;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         height: auto;
@@ -1151,7 +1207,7 @@ footer {
     .hero h1 {
         font-size: 2.25rem;
     }
-    
+
     .hero .d-flex {
         flex-direction: column;
     }
@@ -1180,7 +1236,7 @@ footer {
     #achievementModal .students-box {
         padding: 15px;
     }
-    
+
     #achievementModal .student-pill {
         width: 100%;
         text-align: center;
@@ -1191,12 +1247,12 @@ footer {
         padding: 20px !important;
         text-align: center !important;
     }
-    
+
     .apply-header .d-flex {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .apply-header .me-auto {
         margin: 0 !important;
     }
@@ -1207,6 +1263,38 @@ footer {
 
     .step-indicator-bar {
         padding: 15px !important;
+    }
+}
+
+/* Mobile Navigation Adjustments */
+@media (max-width: 991.98px) {
+    .navbar .container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    
+    .navbar-toggler {
+        order: 1 !important;
+        margin-left: auto !important;
+        padding-right: 0 !important;
+    }
+    
+    .navbar-brand {
+        order: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .brand-name {
+        font-size: 16px !important;
+    }
+
+    .brand-tagline {
+        font-size: 0.75rem !important;
+    }
+
+    .navbar-brand img {
+        height: 45px !important;
     }
 }
 

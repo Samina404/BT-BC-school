@@ -124,7 +124,7 @@ $(document).ready(function() {
         const $container = $('#programs-grid');
         programs.forEach(program => {
             const card = `
-                <div class="col-md-5 mb-4">
+                <div class="col-md-6 mb-4">
                     <div class="program-card">
                         <span class="program-icon">${program.icon}</span>
                         <h3 class="program-title">${program.title}</h3>
